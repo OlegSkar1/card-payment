@@ -6,7 +6,7 @@ import cls from './Flex.module.scss';
 
 export type FlexJustify = 'start' | 'center' | 'end' | 'between';
 
-export type FlexAlign = 'start' | 'center' | 'end' | 'normal';
+export type FlexAlign = 'start' | 'center' | 'end' | 'normal' | 'baseline';
 
 export type FlexDirection = 'row' | 'column';
 
@@ -24,6 +24,7 @@ export const alignClasses: Record<FlexAlign, string> = {
   center: cls.alignCenter,
   end: cls.alignEnd,
   normal: cls.alignNormal,
+  baseline: cls.alignBase,
 };
 
 export const directionClasses: Record<FlexDirection, string> = {

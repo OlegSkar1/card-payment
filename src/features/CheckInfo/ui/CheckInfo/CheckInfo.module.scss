@@ -1,5 +1,4 @@
 .check-info {
-    pointer-events: none;
     position: relative;
     z-index: 1;
     height: 888px;
@@ -9,5 +8,22 @@
         position: absolute;
         z-index: 0;
         inset: 0;
+        margin: auto
+    }
+
+    .price_header, .price, .price_title {
+        position: relative;
+        padding-top: 100px;
+        padding-bottom: 24px;
+    }
+
+    .price {
+        padding-top: 0;
+        padding-bottom: 44px;
+    }
+
+    .price_title {
+        padding: 0;
+        color: var(--accent)
     }
 }

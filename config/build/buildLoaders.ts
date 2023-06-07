@@ -34,7 +34,7 @@ export function buildLoaders({ isDev }: BuildOptions): RuleSetRule[] {
 
   const svgLoader: RuleSetRule = {
     test: /\.svg$/,
-    exclude: /check\.svg$/,
+    exclude: /(checkIcon|arrow)\.svg$/,
     use: [
       {
         loader: '@svgr/webpack',
@@ -56,7 +56,7 @@ export function buildLoaders({ isDev }: BuildOptions): RuleSetRule[] {
   };
 
   const svgResourceLoader: RuleSetRule = {
-    test: /check\.svg$/i,
+    test: /(checkIcon|arrow)\.svg$/i,
     type: 'asset',
     generator: {
       filename: 'assets/icons/[name][ext]',

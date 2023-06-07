@@ -2,6 +2,7 @@ import { FC, memo } from 'react';
 
 import { CheckInfo } from '@/features/CheckInfo';
 import { CheckoutTime } from '@/features/CheckoutTime';
+import arrowIcon from '@/shared/assets/icons/arrow.svg';
 import { classNames } from '@/shared/lib';
 import { Card } from '@/shared/ui/Card';
 import { VStack } from '@/shared/ui/Stack';
@@ -20,6 +21,7 @@ export const CheckWidget: FC<CheckWidgetProps> = memo((props) => {
       <VStack max justify='between' className={cls.checkWrapper}>
         <CheckoutTime className={cls.checkoutTime} />
         <CheckInfo />
+        <img src={arrowIcon} width={214} height={274} className={cls.arrow} />
       </VStack>
     </Card>
   );

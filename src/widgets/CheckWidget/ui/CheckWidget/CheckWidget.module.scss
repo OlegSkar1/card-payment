@@ -12,3 +12,14 @@
 .check-wrapper {
     height: 100%;
 }
+
+.arrow {
+    align-self: end;
+    margin-right: 80px;
+    transition: transform 0.2s;
+
+    &:hover {
+        cursor: pointer;
+        transform: translateY(-30px);
+    }
+}

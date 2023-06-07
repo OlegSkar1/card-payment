@@ -1,1 +1,5 @@
-.back-button {}
+.back-button:hover {
+    .icon {
+        color: inherit
+    }
+}

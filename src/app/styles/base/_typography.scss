@@ -1,0 +1,33 @@
+/* Gilroy-regular */
+@font-face {
+  font-family: Gilroy;
+  font-weight: 600;
+  font-style: normal;
+  src: url('/src/shared/assets/fonts/Gilroy/Gilroy-Regular.eot');
+
+  /* IE9 Compat Modes */
+  src: local(''), url('/src/shared/assets/fonts/Gilroy/Gilroy-Regular.eot?#iefix') format('embedded-opentype'),
+    /* IE6-IE8 */
+    url('/src/shared/assets/fonts/Gilroy/Gilroy-Regular.woff2') format('woff2'),
+    /* Super Modern Browsers */
+    url('/src/shared/assets/fonts/Gilroy/Gilroy-Regular.woff') format('woff'),
+    /* Modern Browsers */
+    url('/src/shared/assets/fonts/Gilroy/Gilroy-Regular.ttf') format('truetype'),
+}
+
+/* Gilroy-semibold */
+@font-face {
+  font-family: Gilroy;
+  font-weight: 700;
+  font-style: normal;
+  src: url('/src/shared/assets/fonts/Gilroy/Gilroy-Semibold.eot');
+
+  /* IE9 Compat Modes */
+  src: local(''), url('/src/shared/assets/fonts/Gilroy/Gilroy-Semibold.eot?#iefix') format('embedded-opentype'),
+    /* IE6-IE8 */
+    url('/src/shared/assets/fonts/Gilroy/Gilroy-Semibold.woff2') format('woff2'),
+    /* Super Modern Browsers */
+    url('/src/shared/assets/fonts/Gilroy/Gilroy-Semibold.woff') format('woff'),
+    /* Modern Browsers */
+    url('/src/shared/assets/fonts/Gilroy/Gilroy-Semibold.ttf') format('truetype'),
+}

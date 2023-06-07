@@ -1,0 +1,15 @@
+@import './base/reset';
+@import './base/typography';
+@import './variables/global';
+@import './themes/light';
+
+.app {
+  min-height: 100vh;
+  font: var(--font-m);
+  color: var(--text);
+  background: var(--overlay);
+}
+
+.content-page {
+  display: flex;
+}

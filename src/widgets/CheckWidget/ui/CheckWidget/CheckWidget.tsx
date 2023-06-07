@@ -17,7 +17,7 @@ export const CheckWidget: FC<CheckWidgetProps> = memo((props) => {
   return (
     <Card tagname='article' border='round' className={classNames(cls.checkWidget, [className], {})}>
       <VStack>
-        <CheckoutTime />
+        <CheckoutTime className={cls.checkoutTime} />
       </VStack>
     </Card>
   );

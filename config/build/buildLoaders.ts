@@ -4,7 +4,7 @@ import { buildCssLoader } from './loaders/buildCssLoader';
 import { BuildOptions } from './types/config';
 
 export function buildLoaders({ isDev }: BuildOptions): RuleSetRule[] {
-  const esBuildLoader = {
+  const esBuildLoader: RuleSetRule = {
     test: /\.[jt]sx?$/,
     loader: 'esbuild-loader',
     options: {
@@ -14,9 +14,9 @@ export function buildLoaders({ isDev }: BuildOptions): RuleSetRule[] {
     exclude: /node_modules/,
   };
 
-  const scssLoader = buildCssLoader(isDev);
+  const scssLoader: RuleSetRule = buildCssLoader(isDev);
 
-  const fontLoader = {
+  const fontLoader: RuleSetRule = {
     test: /\.(woff(2)?|eot|ttf|otf)$/i,
     type: 'asset/resource',
     generator: {
@@ -24,7 +24,7 @@ export function buildLoaders({ isDev }: BuildOptions): RuleSetRule[] {
     },
   };
 
-  const imgLoader = {
+  const imgLoader: RuleSetRule = {
     test: /\.(?:ico|gif|png|jpg|jpeg)$/i,
     type: 'asset/resource',
     generator: {
@@ -32,8 +32,9 @@ export function buildLoaders({ isDev }: BuildOptions): RuleSetRule[] {
     },
   };
 
-  const svgLoader = {
+  const svgLoader: RuleSetRule = {
     test: /\.svg$/,
+    exclude: /check\.svg$/,
     use: [
       {
         loader: '@svgr/webpack',
@@ -54,5 +55,13 @@ export function buildLoaders({ isDev }: BuildOptions): RuleSetRule[] {
     ],
   };
 
-  return [esBuildLoader, scssLoader, svgLoader, fontLoader, imgLoader];
+  const svgResourceLoader: RuleSetRule = {
+    test: /check\.svg$/i,
+    type: 'asset',
+    generator: {
+      filename: 'assets/icons/[name][ext]',
+    },
+  };
+
+  return [esBuildLoader, scssLoader, svgLoader, svgResourceLoader, fontLoader, imgLoader];
 }

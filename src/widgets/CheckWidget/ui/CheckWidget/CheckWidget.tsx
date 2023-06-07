@@ -1,5 +1,6 @@
 import { FC, memo } from 'react';
 
+import { CheckInfo } from '@/features/CheckInfo';
 import { CheckoutTime } from '@/features/CheckoutTime';
 import { classNames } from '@/shared/lib';
 import { Card } from '@/shared/ui/Card';
@@ -16,8 +17,9 @@ export const CheckWidget: FC<CheckWidgetProps> = memo((props) => {
 
   return (
     <Card tagname='article' border='round' className={classNames(cls.checkWidget, [className], {})}>
-      <VStack>
+      <VStack max justify='between' className={cls.checkWrapper}>
         <CheckoutTime className={cls.checkoutTime} />
+        <CheckInfo />
       </VStack>
     </Card>
   );

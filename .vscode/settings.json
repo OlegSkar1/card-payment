@@ -5,5 +5,5 @@
   "stylelint.enable": true,
   "stylelint.validate": ["css", "scss"],
   "cssModules.camelCase": true,
-  "svg.preview.background": "editor"
+  "svg.preview.background": "white"
 }

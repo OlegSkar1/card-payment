@@ -1,9 +1,14 @@
 .check-widget {
     height: 1720px;
+    padding: 20px 0 60px;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
 }
 
 .checkout-time {
     align-self: end;
+}
+
+.check-wrapper {
+    height: 100%;
 }

@@ -1,0 +1,13 @@
+.check-info {
+    pointer-events: none;
+    position: relative;
+    z-index: 1;
+    height: 888px;
+
+
+    .check-card {
+        position: absolute;
+        z-index: 0;
+        inset: 0;
+    }
+}

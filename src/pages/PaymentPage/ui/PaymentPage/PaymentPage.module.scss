@@ -1,0 +1,14 @@
+.payment-page {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+
+    width: 1080px;
+    height: 1945px;
+
+    background: var(--bg-dark);
+}
+
+.call-btns {
+    padding-left: 80px
+}

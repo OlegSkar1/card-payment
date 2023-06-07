@@ -1,0 +1,19 @@
+.normal {
+  background: var(--bg);
+}
+
+.dark {
+  background: var(--bg-dark);
+}
+
+.max {
+  width: 100%;
+}
+
+.round {
+  border-radius: 80px;
+}
+
+.square {
+  border-radius: 0;
+}

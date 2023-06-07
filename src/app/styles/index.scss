@@ -4,12 +4,14 @@
 @import './themes/light';
 
 .app {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   min-height: 100vh;
+
   font: var(--font-m);
   color: var(--text);
-  background: var(--overlay);
-}
 
-.content-page {
-  display: flex;
+  background: var(--overlay);
 }

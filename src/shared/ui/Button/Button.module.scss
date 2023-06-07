@@ -1,0 +1,103 @@
+.button {
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+
+  padding: 24px;
+
+  color: var(--text);
+
+  transition: all 0.2s;
+
+  &:hover {
+    color: var(--accent);
+    transition: all 0.2s;
+
+    .addon-left svg,
+    .addon-right svg {
+      color: var(--accent);
+    }
+  }
+}
+
+.with-addon-left {
+  padding-left: 16px;
+}
+
+.with-addon-right {
+  padding-right: 16px;
+}
+
+.addon-left,
+.addon-right {
+  display: flex;
+}
+
+.addon-right {
+  padding-left: 8px;
+}
+
+.addon-left {
+  padding-right: 8px;
+}
+
+.clear {
+  margin: 0;
+  padding: 0;
+
+  background: none;
+  border: none;
+  outline: none;
+}
+
+.filled {
+  background: var(--bg);
+  border: none;
+  border-radius: 16px;
+}
+
+.small {
+  font: var(--font-s);
+}
+
+.medium {
+  font: var(--font-m);
+}
+
+.large {
+  font: var(--font-l);
+}
+
+.extra-large {
+  font: var(--font-xl);
+}
+
+.s {
+  height: 40px;
+}
+
+.m {
+  height: 80px;
+}
+
+.l {
+  height: 120px;
+}
+
+.normal {
+  font-weight: 600;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.full-width {
+  width: 100%;
+}

@@ -1,0 +1,53 @@
+.normal {
+  color: var(--text);
+}
+
+.hint {
+  color: var(--hint);
+}
+
+.size_s {
+  &.title {
+    font: var(--font-m);
+  }
+
+  &.paragraph {
+    font: var(--font-s);
+  }
+}
+
+.size_m {
+  &.title {
+    font: var(--font-l);
+  }
+
+  &.paragraph {
+    font: var(--font-m);
+  }
+}
+
+.size_l {
+  &.title {
+    font: var(--font-xl);
+  }
+
+  &.paragraph {
+    font: var(--font-l);
+  }
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.left {
+  text-align: left;
+}
+
+.center {
+  text-align: center;
+}
+
+.right {
+  text-align: right;
+}
